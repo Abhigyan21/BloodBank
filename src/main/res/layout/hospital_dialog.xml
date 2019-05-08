@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_name"
+            android:layout_weight="70" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nameHospTextView"
+            android:layout_weight="30"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_home"
+            android:layout_weight="70" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/addressHospTextView"
+            android:layout_weight="30"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:typeface="normal"
+            android:fontFamily="sans-serif" />
+
+    </LinearLayout>
+</LinearLayout>
